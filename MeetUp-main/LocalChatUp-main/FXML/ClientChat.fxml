@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="504.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientChatController">
+   <children>
+      <Pane prefHeight="504.0" prefWidth="227.0" style="-fx-background-color: #2d3447;">
+         <children>
+            <Label fx:id="currentUser" layoutX="35.0" layoutY="192.0" prefHeight="29.0" prefWidth="157.0" text="      USERNAME" textFill="#fcfcfc">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="243.0" prefHeight="20.0" prefWidth="157.0" text="Online Users" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Line endX="143.50003051757812" layoutX="36.0" layoutY="271.0" startX="-100.0" stroke="#f2f2f2" />
+            <TextArea fx:id="OnlineUserList" editable="false" layoutY="283.0" prefHeight="186.0" prefWidth="200.0" style="-fx-background-color: #37eb34;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+            </TextArea>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="35.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/messages_5122x.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="69.0" layoutY="482.0" text="Enter quit to leave chatting" textFill="#faf8f8" />
+            </children>
+      </Pane>
+      <TextArea fx:id="msgTA" editable="false" layoutX="236.0" layoutY="35.0" prefHeight="428.0" prefWidth="399.0" />
+      <TextField fx:id="msgInputTF" layoutX="236.0" layoutY="470.0" prefHeight="26.0" prefWidth="301.0" />
+      <Button layoutX="553.0" layoutY="471.0" mnemonicParsing="false" onAction="#SendMsg" prefHeight="26.0" prefWidth="81.0" text="Send" />
+      <Label layoutX="280.0" layoutY="5.0" prefHeight="22.0" prefWidth="96.0" text="Messenger">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="time" layoutX="490.0" layoutY="5.0" prefHeight="18.0" prefWidth="130.0" text="Connected !!!" />
+      <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="236.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/download.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

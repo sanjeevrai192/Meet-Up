@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="139.0" prefWidth="506.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.IPPortController">
+   <children>
+      <Label layoutX="50.0" layoutY="45.0" text="IP Address" textFill="#faf9f9" />
+      <Label layoutX="56.0" layoutY="85.0" text="Port No." textFill="#fcfafa" />
+      <TextField fx:id="IPAddress" layoutX="147.0" layoutY="41.0" prefHeight="26.0" prefWidth="192.0" promptText="Enter IP Adress" />
+      <TextField fx:id="PortNo" layoutX="147.0" layoutY="81.0" prefHeight="26.0" prefWidth="109.0" promptText="Enter Port No." />
+      <Button fx:id="send" layoutX="433.0" layoutY="94.0" mnemonicParsing="false" onAction="#Enter" prefHeight="26.0" prefWidth="54.0" text="Enter" />
+      <Button layoutX="262.0" layoutY="81.0" mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="74.0" text="Connect" />
+      <Label fx:id="Status" layoutX="346.0" layoutY="14.0" prefHeight="18.0" prefWidth="145.0" style="-fx-background-color: #fff;" text="  Connection Status !!!!!!" textFill="#131111" />
+   </children>
+</AnchorPane>
